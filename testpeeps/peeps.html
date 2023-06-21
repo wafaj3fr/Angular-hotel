@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potato Potato</title>
+    <style>
+      .cards {
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: center; */
+        margin: 40px;
+      }
+      h1 {
+        font-family: "Ubuntu", sans-serif;
+        color: #fff;
+      }
+      img {
+        width: 12%;
+      }
+      .card {
+        background: rgb(68, 68, 123);
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 10px;
+        padding: 20px;
+        font-family: serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <div class="card" id="cl" onclick="func()">
+        <img src="D:\illustrator\dev\testpeeps\Open Peeps - Bust.png" alt="" />
+
+        <h1>Morning Vibes</h1>
+      </div>
+
+      <div class="card">
+        <img
+          src="D:\illustrator\dev\testpeeps\Open Peeps - Bust (1).png"
+          alt=""
+        />
+        <h1>Mid day</h1>
+      </div>
+    </div>
+    <script>
+      document.getElementById("cl").addEventListener("click");
+
+      function func() {
+        document.getElementById("cl").innerHTML =
+          Date() +
+          ", On this day you'll shine bright like a diamond. Not only because your day is going to be good but actually because you truly are a diamond.";
+        document.getElementById("cl").style.background = "#f1f1f1";
+        // document.getElementsByTagName("BODY")[0].style.backgroundColor = "grey";
+      }
+    </script>
+  </body>
+</html>

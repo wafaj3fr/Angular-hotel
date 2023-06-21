@@ -1,0 +1,93 @@
+body{
+    background-color: #f9f9f9;
+    font-family:"Poppins", sans-serif;
+    color: #2c2c51;
+    /* height:100vh; */
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h1{
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: baseline; */
+    margin-top: 100px;
+  }
+  .cards{
+    /* height: 100vh; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card{
+    height:250px;
+    width:380px;
+    position: relative;
+    margin: 10px;
+  }
+  label{
+    position: absolute;
+    margin: 20px;
+    cursor: pointer;
+  }
+  h5{
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin: 15px 0 20px 0;
+  }
+ img{
+    width: 160px;
+  }
+  span{
+    font-weight: 400;
+    font-size:18px;
+    color: #7b7b93;
+  }
+  
+  input[type="radio"]{
+    --webkit-appearance:none;
+    appearance: none;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 7px 7px 15px rgba(2, 28, 53, 0.08);
+    cursor: pointer;
+    outline: none;
+  }
+  input[type="radio"]:before{
+    content:"";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-color: #f9fafd;
+    border: 1px solid #e2e6f3;
+    border-radius:50%;
+    top: 35px;
+    right: 20px;
+  }
+  input[type="radio"]:after{
+    content:"";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-color: transparent;
+    border-radius:50%;
+    top: 36px;
+    right: 21px;
+  }
+  input[type="radio"]:hover{
+    text-transform: scale(1.06);
+  }
+  input[type="radio"]:checked{
+    outline: 3px solid hsl(210, 81%, 81%);
+    
+  }
+  input[type="radio"]:checked:after{
+    background-color: hsl(210, 81%, 81%);
+  }
